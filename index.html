@@ -8,7 +8,7 @@
 		<script type="text/javascript">
 			const GRAVITY = .33
 			const COUNT = Math.floor(11 * 999)
-			const MAX_MOUSE = 99
+			const MAX_MOUSE = 77
 			const TEXT = 'Loose Bit Labs'
 			const MX = {x:-999, y:-999, v:0}
 
@@ -25,6 +25,10 @@
 				overlay.height = h
 				lul.width = w
 				lul.height = h
+
+				lulContext.currentColor = randomPastelColor()
+				lulContext.nextColor = randomPastelColor()
+				lulContext.colorProgress = 0.01
 
 				makeMask(w, h, overlayContext)
 				draw(lulContext, w, h);
@@ -47,23 +51,37 @@
 
 				const imageData = context.getImageData(0, 0, w, h)
 				for (let i = 0 ; i < w * h * 4 ; ) {
-					const v = (imageData.data[i]>33) ? 0 : 121
-					imageData.data[i++] = 11
-					imageData.data[i++] = 22
-					imageData.data[i++] = 33
+					const on = imageData.data[i]>33
+					const v = on ? 22 : 181
+					imageData.data[i++] = on ? 252 : 0
+					imageData.data[i++] = on ? 131 : 0
+					imageData.data[i++] = on ? 0: 0
 					imageData.data[i++] = v
 				}
 				context.putImageData(imageData, 0, 0)
 			}
 
 			const draw = (context, w, h) => {
-				context.fillStyle = 'black'
+				context.fillStyle = 'rgb(11,11,33)'//'rgb(22,22,44)'
 				context.fillRect(0,0,w,h)
-				const font = Math.floor(w / 111.111)
+				const font = Math.floor(w / 88.88)
 				context.font = `bold ${font}px Sans-Serif`
+
+
+				context.colorProgress *= 1.0501
+				if (context.colorProgress>1) {
+					context.currentColor = randomPastelColor()
+					context.nextColor = randomPastelColor()
+					context.colorProgress = 0.01
+				}
+				const color = context.currentColor.map((v,i) => Math.floor(
+					v + context.colorProgress * (context.nextColor[i] - v )
+				))
+				const rgb = ['rgb(', color.join(','), ')'].join('')
+				if (context.colorProgress <.1) console.log(context.colorProgress, rgb)
 				
 				for (const bit of getBits(context, w, h)) {
-					bit.update(GRAVITY)
+					bit.update(GRAVITY, rgb)
 					bit.draw()
 				}
 
@@ -84,17 +102,17 @@
 			const makeBit = (context, w, h, i) => {
 				const bit = {}
 				const m = .2992 * w;
-				bit.reset = (first = true) => {
+				bit.reset = (first = true, color = 'white') => {
 					bit.x = m + r() * w * .6886 - r() * w * .33
 					bit.y = first ? r() * h : r() * h * -.33
-					bit.color = 'white' //'red white blue'.split(' ')[Math.floor(2.92*r())] //'red' //#randomPastelColor()
+					bit.color = color ///'white' //'red white blue'.split(' ')[Math.floor(2.92*r())] //'red' //#randomPastelColor()
 					if (!i)  console.log(bit.color)
 					bit.dx = .11 * g()
 					bit.dy = bit.y / 101
 					bit.txt = TEXT[i%TEXT.length]
 					return bit
 				}
-				bit.update = (gravity) => {
+				bit.update = (gravity, color) => {
 					bit.dy += gravity;
 					bit.dx += .020 * g()
 
@@ -107,7 +125,7 @@
 					bit.x += bit.dx;
 					bit.y += bit.dy;
 					if (bit.y > h) {
-						bit.reset(false)
+						bit.reset(false, color)
 					}
 				}
 				bit.draw = () => {
@@ -117,12 +135,12 @@
 				return bit.reset()
 			}
 
-			const randomPastelColor = () => {
+			const randomPastelColor = (arrrrr = true ) => {
 				const c = new Array(3).fill(128)
 				for (let i = 0 ; i < 4 ; i++ ) {
 					c[Math.floor(2.92*r())] += 64
 				}
-				return "rgb(" + c.join(',') + ")";
+				return arrrrr ? c : "rgb(" + c.join(',') + ")";
 			}
 
 			const r = () => Math.random()
