@@ -1,0 +1,36 @@
+body { 
+	color:#bbe; 
+	background:black; 
+	font-family: sans-serif; 
+	margin:.5em; 
+	overflow:hidden;
+	user-select: none;
+}
+a { 
+	color:#aad; 
+	text-decoration:none; 
+}
+canvas {
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+
+div.right_down {
+	z-index:2;
+	font-size:x-large;
+	position:absolute;
+	bottom:1em;
+	right:1em;
+}
+.x {
+	position:relative;
+	top:.0770em;
+	height: .77em;
+	padding-right:.11em;
+}
+.y {
+	position:relative;
+	top:.191em;
+	height: 1em;
+}

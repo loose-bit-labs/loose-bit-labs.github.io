@@ -1,0 +1,62 @@
+
+body {
+	background:black;
+	color:#ccb;
+	font-family: sans-serif;
+	margin:2em;
+}
+
+notopre  { 
+	color:#ddc;
+	kcolor:#8c8; 
+	position: absolute;
+	top: 1em;
+	right: 2em;
+	idisplay:none;
+}
+
+pre  { 
+	font-family: sans-serif;
+	color:#bbc;
+}
+
+a { 
+	color:#aad; 
+	text-decoration:none; 
+}
+
+ul {
+	/* this is a bit wacko to make the pdf work */
+	list-style-type: "- ";
+	margin-left:-2em;
+}
+
+#resume {
+	margin:auto;
+	font-style: italic;
+	text-align: center;
+}
+
+
+
+div.right_down {
+	z-index:2;
+	font-size:x-large;
+	position:fixed;
+	bottom:1em;
+	right:1em;
+}
+.x {
+	position:relative;
+	top:.0770em;
+	height: .77em;
+	padding-right:.11em;
+}
+.y {
+	position:relative;
+	top:.191em;
+	height: 1em;
+}
+
+
+

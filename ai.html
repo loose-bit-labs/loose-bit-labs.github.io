@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+	<HEAD>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+
+		<!--
+                  __   __   __   ___       
+            |    /  \ /  \ /__` |__        /\             |
+            |___ \__/ \__/ .__/ |___      /  \            |
+                                         /    \           |
+             __    ___                  /      \          |
+            |__) |  |                  /        \         |
+            |__) |  |                 /~~~~~~~~~~\        |
+                                     /            \       |
+                       __   __      /              \      |
+            |     /\  |__) /__`    /                \     |
+            |___ /~~\ |__) .__/   /                  \    |
+		-->
+
+		<TITLE>lbl</TITLE>
+
+		<script type="text/javascript" src="js/lbl-ai.js"></script>
+		<script type="text/javascript">  
+			window.addEventListener('load', () => lbl())
+		</script>
+		<link rel="stylesheet" href="css/etc.css"/>
+	</HEAD>
+	<BODY>
+		<canvas id="particles"></canvas>
+		<canvas id="overlay"></canvas>
+		<div class="lbl">
+			<div class="overview">
+				This is the main content. Do you like it? It isn't done.
+			</div>
+
+
+			<h1>My Projects</h1>
+
+			<h2><a href="https://huggingface.co/spaces/verkaDerkaDerk/face-mesh-workflow">Face Mesh Workflow</a></h2>
+			<a href="https://huggingface.co/spaces/verkaDerkaDerk/face-mesh-workflow">
+				<img src="pix/ss/face-mesh-workflow.png" style="float:right; height:333px"/>
+			</a>
+
+			<div>
+				This project combines mediapip with Zoe and Midas depth.
+				It identifies a primary face and provides knobs to tune each depth source for the face mesh.
+				Then you can combine then linearly to create a composite which better reflects the ground truth.
+				Since the (expensive) depth estimation is done only once there is a large degree of freedom to configure the output and tweak the final result.
+			</div>
+			
+
+			<h2>IOU DOX</h2>
+				
+			<ul>
+				<li>muscleManLLM: langchain personality project</li>
+				<li>Marvin McMarvelous: whisper to ollama to a1111</li>
+				<li>fLimfLaMs: discordJs bot around a lot of local AI</li>
+			</ul>
+
+			<h1>Other experiments</h1>
+
+			<div>I will expand all these. There are interesting experiments behind each. I just have not been keeping up with documentation.</div>
+
+			<ul>
+				<li>Stable Diffusion</li>
+				<li>Automatic1111</li>
+				<li>ComfyUI</li>
+				<li>Bark</li>
+				<li>Whisper</li>
+				<li>MusicGen</li>
+				<li>Piper</li>
+				<li>Diffusers</li>
+				<li>CharacterGen</li>
+				<li>ollama</li>
+				<li>llamacpp</li>
+				<li>koboldcpp</li>
+				<li>NLTK</li>
+			</ul>
+
+		</div>
+		<div class="right_down">
+			<a href="https://x.com/LooseBitLabs" target="_">
+				<img class="x" src="pix/icon-x.png"/>
+			</a>
+			<span id="lbl"><a href="/" rel="prev">@LooseBitLabs</a></span>
+			<a href="https://www.youtube.com/@LooseBitLabs" target="_">
+				<img class="y" src="pix/icon-yt.png"/>
+			</a>
+		</div>
+	</BODY>
+</HTML>
