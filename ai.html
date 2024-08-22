@@ -5,79 +5,106 @@
 		<meta content="utf-8" http-equiv="encoding">
 
 		<!--
-                  __   __   __   ___       
-            |    /  \ /  \ /__` |__        /\             |
-            |___ \__/ \__/ .__/ |___      /  \            |
-                                         /    \           |
-             __    ___                  /      \          |
-            |__) |  |                  /        \         |
-            |__) |  |                 /~~~~~~~~~~\        |
-                                     /            \       |
-                       __   __      /              \      |
-            |     /\  |__) /__`    /                \     |
-            |___ /~~\ |__) .__/   /                  \    |
+		          __   __   __   ___       
+		    |    /  \ /  \ /__` |__ 
+		    |___ \__/ \__/ .__/ |___
+		                           
+		     __    ___            
+		    |__) |  |            
+		    |__) |  |           
+		                       
+		               __   __ 
+		    |     /\  |__) /__`
+		    |___ /~~\ |__) .__/
 		-->
-
-		<TITLE>lbl</TITLE>
+		<TITLE>lbl ai</TITLE>
 
 		<script type="text/javascript" src="js/lbl-ai.js"></script>
 		<script type="text/javascript">  
 			window.addEventListener('load', () => lbl())
 		</script>
-		<link rel="stylesheet" href="css/etc.css"/>
+		<link rel="stylesheet" href="css/page.css"/> 
 	</HEAD>
 	<BODY>
-		<canvas id="particles"></canvas>
-		<canvas id="overlay"></canvas>
 		<div class="lbl">
-			<div class="overview">
-				This is the main content. Do you like it? It isn't done.
-			</div>
-
-
-			<h1>My Projects</h1>
-
-			<h2><a href="https://huggingface.co/spaces/verkaDerkaDerk/face-mesh-workflow">Face Mesh Workflow</a></h2>
-			<a href="https://huggingface.co/spaces/verkaDerkaDerk/face-mesh-workflow">
-				<img src="pix/ss/face-mesh-workflow.png" style="float:right; height:333px"/>
-			</a>
-
-			<div>
-				This project combines mediapip with Zoe and Midas depth.
-				It identifies a primary face and provides knobs to tune each depth source for the face mesh.
-				Then you can combine then linearly to create a composite which better reflects the ground truth.
-				Since the (expensive) depth estimation is done only once there is a large degree of freedom to configure the output and tweak the final result.
-			</div>
-			
-
-			<h2>IOU DOX</h2>
-				
-			<ul>
-				<li>muscleManLLM: langchain personality project</li>
-				<li>Marvin McMarvelous: whisper to ollama to a1111</li>
-				<li>fLimfLaMs: discordJs bot around a lot of local AI</li>
-			</ul>
-
-			<h1>Other experiments</h1>
-
-			<div>I will expand all these. There are interesting experiments behind each. I just have not been keeping up with documentation.</div>
-
-			<ul>
-				<li>Stable Diffusion</li>
-				<li>Automatic1111</li>
-				<li>ComfyUI</li>
-				<li>Bark</li>
-				<li>Whisper</li>
-				<li>MusicGen</li>
-				<li>Piper</li>
-				<li>Diffusers</li>
-				<li>CharacterGen</li>
-				<li>ollama</li>
-				<li>llamacpp</li>
-				<li>koboldcpp</li>
-				<li>NLTK</li>
-			</ul>
-
+<h1 id="overview">Overview</h1>
+<p>Here are a number of different AI related projects and experiments. Some of the projects are still private repositories I’m working towards making public. There’s quite a back log to catch up on, so please be patient!</p>
+<p>A lot of the verbiage is PHI3 spew. Though generated on the project documentation it is definitely state-of-the-art if you catch my drift. I’ve tried to correct some of the more glarings, but this is only meant as an overview in any case. Please consult each project for more accurate documentation.</p>
+<h1 id="face-mesh-workflow-with-depth-estimation-using-mediapipe-zoe-and-midas">Face Mesh Workflow with Depth Estimation using MediaPipe, Zoe, and Midas</h1>
+<p><img src="pix/ss/face-mesh-workflow.png" class="right"/></p>
+<p>This workflow leverages <a href="https://ai.google.dev/edge/mediapipe/solutions/guide">MediaPipe</a> to detect faces in images while integrating depth estimations from both <a href="https://github.com/isl-org/ZoeDepth">Zoe</a> and <a href="https://github.com/isl-org/MiDaS">Midas</a>. The workflow is designed for ease of use with a simple interface, allowing users to upload an image and view the detected face along with its depth estimation in 3D.</p>
+<h2 id="huggingface-demo">HuggingFace Demo</h2>
+<p>The live demo is available on <a href="https://huggingface.co/spaces/verkaDerkaDerk/face-mesh-workflow">HuggingFace.co</a>.</p>
+<h2 id="features-of-this-workflow">Features of This Workflow</h2>
+<ul>
+<li><strong>Face Detection</strong>: MediaPipe is used to detect faces in an uploaded image, providing facial landmarks and pose information.</li>
+<li><strong>Depth Estimation Integration</strong>: The workflow allows combining depth estimations from Zoe or Midas with the detected face’s 3D model for a comprehensive visualization of both facial features and their spatial orientation.</li>
+<li><strong>Adjustable Spinning Direction</strong>: Due to differences in Y axis orientations between this setup and Blender, you can spin the 3D view as needed (usually counterclockwise) by adjusting the display settings or modifying image preprocessing steps if necessary.</li>
+</ul>
+<h1 id="introducing-marvin-mcmarvelous-the-robotic-jive-bot">Introducing Marvin-McMarvelous: The Robotic Jive-Bot</h1>
+<p><a href="https://github.com/vgvm-lbl/marvin-mcmarvelous">Marvin-McMarvelous on Github</a></p>
+<p>Meet Marvin McMarvelous, the innovative robotic jive-bot designed to seamlessly blend AI technology with a touch of humor. This state-of-the-art bot offers an exciting range of capabilities that will surely leave you impressed. Let’s take a closer look at how Marvin McMarvelous brings these features to life:</p>
+<p><img src="pix/mcm.png" class="right"/></p>
+<p><strong>Features &amp; Functionalities:</strong></p>
+<ol type="1">
+<li><strong>Wake Word Detection:</strong> Marvin-McMarvelous is programmed to wake up and perform tasks upon recognizing the designated “wake word,” which defaults to “marvin.” However, you can customize your preferred wake word using –wake_words option in the command line.</li>
+<li><strong>Text-to-Speech Transformation:</strong> Once activated, Marvin McMarvelous converts text inputs into spoken audio using whisper-style voice synthesis for a more engaging user experience.</li>
+<li><strong>LLM Interaction:</strong> This bot can directly interact with large language models (LLMs) by sending requests and receiving responses that are read aloud via the text-to-speech feature, enabling smooth conversations with AI systems.</li>
+<li><strong>Image Generation:</strong> Marvin McMarvelous is equipped to send LLM prompts to a text-to-image bot, displaying compelling visuals based on your inputs and requests.</li>
+<li><strong>Customizable Listening Options:</strong> You can leverage the power of Hugging Face’s audio course by incorporating their wake word detection techniques into Marvin McMarvelous for enhanced listening capabilities.</li>
+</ol>
+<h2 id="configuration-setup">Configuration &amp; Setup</h2>
+<p>To get the most out of Marvin-McMarvelous, follow these steps:</p>
+<ol type="1">
+<li><strong>Installation &amp; Environment Preparation:</strong> Ensure you have the recommended setup using pyenv and Python version 3.10.10 or higher, along with essential dependencies like Tkinter. You can use the provided installation commands to set up your virtual environment and install the required packages.</li>
+<li><strong>LLM Integration:</strong> Ollama, a highly-rated LLM service, serves as Marvin McMarvelous’ go-to for generating responses based on user inputs. Be sure to configure it by adjusting its host entry (<code>aid</code> variable) and pointing the URL to <code>http://aid:11434/api/generate</code>.</li>
+<li><strong>TTS &amp; TTI Bot Integration:</strong> Marvin McMarvelous also features Piper for text-to-speech conversion, enabling it to convert inputs into whispered audio. Additionally, Automatic1111 is utilized as a stable diffusion web UI to generate images based on LLM prompts.</li>
+<li><strong>Customization:</strong> To fine-tune your Marvin McMarvelous experience, you can override system prompts with the <code>--system</code> flag or leverage additional customizations like –wake_words and dynamic prompting capabilities for a more personalized user journey.</li>
+</ol>
+<h2 id="embrace-more-marvelousness">Embrace More Marvelousness!</h2>
+<p>As an AI-driven jive-bot, Marvin McMarvelous offers limitless possibilities in terms of engagement and interaction. Whether you’re interested in image generation or simply want to experience the wonders of modern technology firsthand, this innovative creation is here to delight and amaze users with its seamless blend of artificial intelligence, natural language processing, and human-like conversational abilities.</p>
+<p>So, get ready to join Marvin McMarvelous on an exciting journey into the world of advanced AI jive-bots!</p>
+<hr />
+<h1 id="muscle-llm">Muscle LLM</h1>
+<p><img src="pix/mm-00026-350228160.png" class="right"/></p>
+<p>Originally I was missing the character MuscleMan from binging the Regular show, so I wanted to try to recreate him using a local LLM. The results was <a href="https://github.com/luckybit4755/muscleLLM/blob/main/">Muscle LLM</a>. Though I was never able to full get the conversational history (RAG) working as I wanted it was still a pretty fun experiment.</p>
+<p>Join the thrilling world of LangChain and LlamaCpp as we embark on a journey to unlock the potentials of AI conversations with our small experiment. Our innovative project combines two distinct personalities, Muscle Man and AI Assistant, in order to explore the contextual capabilities and document-based features of LangChain.</p>
+<p>If you’re passionate about advancing conversational technologies or simply want to contribute ideas for enhancing our experiment, we warmly welcome your participation! Let us collectively push boundaries and discover new horizons through this collaborative endeavor.</p>
+<p>In the spirit of exploration, we currently feature two personalities in Muscle Man and AI Assistant roles. Interested individuals can participate by submitting their ideas or suggestions for improvement using one of the following commands:</p>
+<ol type="1">
+<li><p><code>./muscleLLM.py -m models/StableBeluga-13B-GGML/stablebeluga-13b.ggmlv3.q2_K.bin</code> Using llama.cpp and installing dependencies from requirements.txt</p></li>
+<li><p><code>./muscleLLM.py -m [yada-yada] -p ai</code> Installing the necessary components using pip, followed by a change in CMake arguments to enable GPU support for LlamaCpp (optional)</p></li>
+<li><p><code>./muscleLLM.py -k http://localhost:5001/</code> Running Muscle Man with an external context store and Kolboldcpp integration</p></li>
+</ol>
+<p>The experiment also provides the ability to run locally using a GGML model, as shown by the example below:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="ex">./muscleLLM.py</span> -m starling-lm-7b-alpha.Q8_0.gguf -p starling --llama_cpp_max_tokens 2048 --http 13031</span></code></pre></div>
+<p>Here’s a glimpse of the exciting ideas that could elevate our experiment to new heights:</p>
+<ol type="1">
+<li>Research Assistant: Create an AI persona who acts as a research assistant, helping participants explore various topics and providing knowledge-based assistance while maintaining contextual awareness using LangChain’s capabilities.</li>
+<li>Multi-Actor Stories: Develop an immersive multi-actor storytelling experience where Muscle Man, the AI Assistant, and other unique personas interact to create dynamic narratives with evolving plotlines. This would allow participants to contribute their creativity in shaping these interactive tales while exploring LangChain’s features further.</li>
+</ol>
+<h1 id="flimflams">fLimfLaMs</h1>
+<p><img src="./pix/ss/labotami-vr-date-night-a1111.png" class="right"/></p>
+<p>Though <a href="https://github.com/luckybit4755/fLimfLaMs">fLimfLaMs on Github</a>, it is currently going thru some cleanup and refactoring but should be available soon. It uses DiscordJS and is probably the AI tool that I personally get the most use of out.</p>
+<p>It provides a simple mechansims to translate formm text-to-image-to-text-speech or whatever else I want to do at the time. At this point it still feels pretty unique and I really want to get it out there so others can enjoy this what of playing with local AI and even integrate remote APIs for AI or traditional types of service such as search, geolocation, weather, and pretty everything the web has to offer up for mostly fee.</p>
+<p>Are you ready to dive deep into the world of local artificial intelligence (AI) like never before? Introducing fLimfLaMs, your ultimate gateway to a vast array of innovative and interactive experiences. This cutting-edge tool, currently undergoing an essential cleanup and refactoring process on GitHub, harnesses the power of DiscordJS while incorporating various local and remote AI models.</p>
+<p>Imagine seamlessly transforming text into captivating images or mesmerizing audio—fLimfLaMs makes it all possible with its unique mechanisms that support a wide range of functionalities, from converting text to image (and vice versa), generating speech and even integrating various traditional services such as search engines, geolocation tools, weather forecasts, and more.</p>
+<p>Throughout this exciting journey, fLimfLaMs has evolved beyond its initial purpose of being a Discord bot for local LLM (Language Learning Models). The project now offers access to an extensive range of locally running AI models along with various remote APIs that broaden the horizons and capabilities.</p>
+<p>Here’s what you can expect from fLimfLaMs:</p>
+<ol type="1">
+<li>Automatic1111: Transform text into stunning images or vice versa, unlocking your imagination in an instant!</li>
+<li>Ollama: Combine the magic of text-to-text and image-to-image capabilities for a truly unique experience!</li>
+<li>Bark: Bring your thoughts to life with high-quality audio generated from any text input.</li>
+<li>Piper: Experience speech that sounds as natural as human conversation, thanks to our state-of-the-art text-to-speech model.</li>
+<li>Whisper: Convert spoken words into accurate transcriptions—no typing required!</li>
+<li>Grok: Get your answers with ease using a versatile text-to-text tool that covers various subjects and queries.</li>
+<li>Google: Search the web like never before, effortlessly accessing information in multiple languages.</li>
+<li>Weather.gov: Discover weather updates based on your GPS location or enter specific addresses for personalized forecasts.</li>
+<li>Wikipedia: Quench your thirst for knowledge with an easy-to-use search function that uncovers a wealth of information right at your fingertips!</li>
+</ol>
+<p>All the AI models and APIs are easily accessible through Discord, offering you complete flexibility to create unique interactions among them. By configuring each bot via bots.json files, users can effortlessly tailor their experiences based on individual preferences and requirements.</p>
+<p>With fLimfLaMs, you have the opportunity to embark on a remarkable journey through local AI and its limitless potential. Whether it’s for personal or professional use, this revolutionary tool is designed to provide an unparalleled level of convenience and immersive experiences that are hard to resist!</p>
+<p>Stay tuned as we continue our efforts in improving fLimfLaMs—soon you can start exploring the vast possibilities it has to offer. Join us on this adventure, where creativity meets innovation, and together, let’s shape a future defined by local AI!</p>
 		</div>
 		<div class="right_down">
 			<a href="https://x.com/LooseBitLabs" target="_">
@@ -88,5 +115,6 @@
 				<img class="y" src="pix/icon-yt.png"/>
 			</a>
 		</div>
+		<div class="preview"></div>
 	</BODY>
 </HTML>

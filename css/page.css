@@ -1,0 +1,58 @@
+body { 
+	color:#bbe; 
+	background:black; 
+	font-family: sans-serif; 
+	margin:.5em; 
+	user-select: none;
+}
+.lbl {
+}
+img.right{
+	float:right;
+	max-height: 16em;
+}
+a { 
+	color:#aad; 
+	text-decoration:none; 
+	font-weight:bold;
+	font-size:large
+	}
+canvas {
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+
+div.right_down {
+	z-index:2;
+	font-size:x-large;
+	position:fixed;
+	bottom:1em;
+	right:1em;
+}
+.x {
+	position:relative;
+	top:.0770em;
+	height: .77em;
+	padding-right:.11em;
+}
+.y {
+	position:relative;
+	top:.191em;
+	height: 1em;
+}
+
+div.preview {
+	display:none;
+	background-image: url("../pix/ss/labotami-vr-date-night-a1111.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	position:fixed;
+	left:16%;
+	top:16%;
+	width:66%;
+	height:66%;
+	z-index:7;
+
+	
+}
