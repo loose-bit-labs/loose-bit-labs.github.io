@@ -109,7 +109,7 @@ Throughout this exciting journey, fLimfLaMs has evolved beyond its initial purpo
 
 Here's what you can expect from fLimfLaMs:
 
-1. Automatic1111: Transform text into stunning images or vice versa, unlocking your imagination in an instant!
+1. Automatic1111: Transform text into stunning images or create alternatives from an image, unlocking your imagination in an instant!
 2. Ollama: Combine the magic of text-to-text and image-to-image capabilities for a truly unique experience!
 3. Bark: Bring your thoughts to life with high-quality audio generated from any text input.
 4. Piper: Experience speech that sounds as natural as human conversation, thanks to our state-of-the-art text-to-speech model.
