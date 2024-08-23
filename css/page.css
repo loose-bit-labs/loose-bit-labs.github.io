@@ -22,7 +22,7 @@
 
 	/* ----------------------------------------------- */
 
-    --text: var(--lightbg);
+    --text: var(--lightgray);
 
     --terminal: var(--lightgraygreen);
     --terminalBackground: var(--darkblue);
