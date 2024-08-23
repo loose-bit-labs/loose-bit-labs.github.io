@@ -22,7 +22,7 @@
 
 	/* ----------------------------------------------- */
 
-    --text: var(--palegraygreen);
+    --text: var(--lightbg);
 
     --terminal: var(--lightgraygreen);
     --terminalBackground: var(--darkblue);
@@ -33,14 +33,14 @@
 }
 
 body { 
-	color: var(--lightgray);
+	color: var(--text);
 	background: var(--background); 
 	font-family: sans-serif; 
 	margin:.5em; 
 }
 
 .lbl {
-	margin-top: 3.3em;
+	margin-top: 4.4em;
 }
 
 img.right{
@@ -93,12 +93,15 @@ div.right_down {
 	height: 3em;
 	overflow: hidden;
 	user-select: none;
-	padding-bottom:.5em;
+	padding-bottom:.77em;
 }
 
 div.header a {
 	color: inherit;
 	font-size:200%;
+	display:block;
+	width:100%;
+	height:100%;
 }
 
 div.header div {
@@ -110,25 +113,48 @@ div.header div {
 }
 
 div.header div:nth-child(1) {
-    color: var(--lightgraygreen);
-    background: var(--darkblue);
-
+    color: var(--terminal);
+    background: var(--terminalBackground);
 }
+div.header div:nth-child(1):hover {
+    background: var(--terminal);
+    color: var(--terminalBackground);
+}
+
 div.header div:nth-child(2) {
 	color:var(--red_lite);
 	background:var(--red_dark);
 }
+div.header div:nth-child(2):hover {
+	background:var(--red_lite);
+	color:var(--red_dark);
+}
+
 div.header div:nth-child(3) {
 	color:var(--grn_lite);
 	background:var(--grn_dark);
 }
+div.header div:nth-child(3):hover {
+	background:var(--grn_lite);
+	color:var(--grn_dark);
+}
+
 div.header div:nth-child(4) {
 	color:var(--blu_lite);
 	background:var(--blu_dark);
 }
+div.header div:nth-child(4):hover {
+	background:var(--blu_lite);
+	color:var(--blu_dark);
+}
+
 div.header div:nth-child(5) {
 	color:var(--ylw_lite);
 	background:var(--ylw_dark);
+}
+div.header div:nth-child(5):hover {
+	background:var(--ylw_lite);
+	color:var(--ylw_dark);
 }
 
 div.preview {
@@ -136,12 +162,11 @@ div.preview {
 	background-image: url("../pix/ss/labotami-vr-date-night-a1111.png");
 	background-repeat: no-repeat;
 	background-size: contain;
+	background-position: center;
 	position:fixed;
 	left:16%;
 	top:16%;
 	width:66%;
 	height:66%;
 	z-index:7;
-
-	
 }
