@@ -53,6 +53,15 @@ const lbl_setup_sidebar = () => {
 
 	let hot = null, ness = null;
 
+	const onClick = (div, section) => {
+		if (hot) hideElement(hot);
+		if (ness) ness.classList.remove('hot');
+		showElement(section);
+		div.classList.add('hot');
+		hot = section;
+		ness = div;
+	};
+
 	for (const section of document.querySelectorAll('div.section')) {
 		const name = section.id.split('-').slice(1,4).join('_').toLowerCase();
 		if (!(name in MAPPED)) {
@@ -67,14 +76,8 @@ const lbl_setup_sidebar = () => {
 		left.appendChild(div);
 		hideElement(section);
 
-		div.addEventListener('click', () => {
-			if (hot) hideElement(hot);
-			if (ness) ness.classList.remove('hot');
-			showElement(section);
-			div.classList.add('hot');
-			hot = section;
-			ness = div;
-		});
+		div.addEventListener('click', () => onClick(div, section));
+		if (!hot) div.click();
 	}
 };
 
