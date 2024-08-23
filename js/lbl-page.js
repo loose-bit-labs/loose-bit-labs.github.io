@@ -70,14 +70,19 @@ const lbl_setup_sidebar = () => {
 			}
 			continue;
 		}
+
 		const mapping = MAPPED[name];
+
 		const div = document.createElement('div');
 		div.appendChild(document.createTextNode(mapping));
 		left.appendChild(div);
-		hideElement(section);
 
 		div.addEventListener('click', () => onClick(div, section));
-		if (!hot) div.click();
+		if (hot) {
+			hideElement(section);
+		} else {
+			onClick(div, section);
+		}
 	}
 };
 
