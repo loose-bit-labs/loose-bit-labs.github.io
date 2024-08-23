@@ -12,6 +12,8 @@ const FPS = 17.71
 const MX = {x:-999, y:-999, v:0}
 const EPSILON = .003300
 
+const STORAGE_ITEM_NAME = 'lbl-particles'
+
 const lbl = () => {
 	const overlay = document.getElementById('overlay')
 	const particles = document.getElementById('particles')
@@ -32,6 +34,11 @@ const lbl = () => {
 	particlesContext.hotness = {}
 	particlesContext.yup = false
 	particlesContext.start = now()
+
+    const stored  = window.localStorage.getItem( STORAGE_ITEM_NAME );
+	if (stored) {
+		particlesContext.percent = .8;
+	}
 
 	const sizing = () => {
 		const w = window.innerWidth
@@ -96,6 +103,7 @@ const draw = (context) => {
 		context.yup = true
 		console.log('yowsa!')
 		context.percent = .9
+		window.localStorage.setItem(STORAGE_ITEM_NAME, true);
 	}
 
 	drawAreas(context)
