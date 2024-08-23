@@ -43,17 +43,25 @@ body {
 .lbl {
 	margin-top: 4.4em;
 	margin-bottom: 4.4em;
+	margin-left:10%;/*8.6em;*/
+	margin-right:1.1em;
 }
 
 img.right{
 	float:right;
-	max-height: 16em;
+	max-height: 22em;
+	old-max-height: 16em;
 }
 
 a {
 	text-decoration:none; 
 	font-weight:bold;
-	font-size:large
+	font-size:large;
+	color:var(--link);
+}
+
+a:hover {
+	color:var(--darkmarrow);
 }
 
 .lbl a { 
@@ -114,15 +122,18 @@ div.header div {
 	padding-left:1em;
 }
 
+/*home 1*/
 div.header div:nth-child(1) {
     color: var(--terminal);
     background: var(--terminalBackground);
+	width: 9%;
 }
 div.header div:nth-child(1):hover {
     background: var(--terminal);
     color: var(--terminalBackground);
 }
 
+/*ai 2*/
 div.header div:nth-child(2) {
 	color:var(--red_lite);
 	background:var(--red_dark);
@@ -132,6 +143,7 @@ div.header div:nth-child(2):hover {
 	color:var(--red_dark);
 }
 
+/*gaming 3*/
 div.header div:nth-child(3) {
 	color:var(--grn_lite);
 	background:var(--grn_dark);
@@ -141,6 +153,7 @@ div.header div:nth-child(3):hover {
 	color:var(--grn_dark);
 }
 
+/*etc 4*/
 div.header div:nth-child(4) {
 	color:var(--blu_lite);
 	background:var(--blu_dark);
@@ -150,6 +163,7 @@ div.header div:nth-child(4):hover {
 	color:var(--blu_dark);
 }
 
+/*pro 5*/
 div.header div:nth-child(5) {
 	color:var(--ylw_lite);
 	background:var(--ylw_dark);
@@ -158,6 +172,19 @@ div.header div:nth-child(5):hover {
 	background:var(--ylw_lite);
 	color:var(--ylw_dark);
 }
+
+/*gear 6*/
+div.header div:nth-child(6) {
+    color: var(--lightslate);
+    background: var(--terminalBackground);
+	width:3%;
+	float:right;
+}
+div.header div:nth-child(6):hover {
+    background: var(--lightslate);
+    color: var(--terminalBackground);
+}
+
 
 div.preview {
 	display:none;
@@ -171,4 +198,55 @@ div.preview {
 	width:66%;
 	height:66%;
 	z-index:7;
+}
+
+.left {
+	position:fixed;
+	top:3em;
+	left:0;
+	width: 9%;
+	height: 100%;
+	overflow: hidden;
+	user-select: none;
+	padding-right:.77em;
+	color: var(--lightgraygreen);
+	font-size:125%;
+	font-weight: bold;
+}
+
+.left div {
+	border:.11em solid var(--lightgraygreen);
+	border-radius: .22em;
+	padding-top:.22em;
+	padding-bottom:.22em;
+	padding-left:.5em;
+	padding-right:1em;
+	margin-left: .22em;
+	margin-right: .22em;
+	margin-top: .33em;
+	margin-bottom: .33em;
+}
+
+.left div:hover, .left div.hot {
+	border-color: var(--darkmarrow);
+	color: var(--darkmarrow);
+	background: var(--darkblue);
+}
+
+.left div.hot {
+	border-color: var(--lightslate);
+	color: var(--lightslate);
+	background: var(--darkblue);
+}
+
+.section {
+	display:none;
+}
+#section-overview {
+	display:block;
+}
+
+/* this is a bit hacky... */
+#section-lets-connect, #section-resume, #section-work-history {
+	display:block;
 }

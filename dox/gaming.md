@@ -20,37 +20,37 @@ Beware! If you run out of lives, the game is over!
 
 Scaletris is on [GitHub](https://loose-bit-labs.itch.io/scaletris) as well as on [itch.io](https://loose-bit-labs.itch.io/scaletris)
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/kdW7b2cVJ74" title="Scaletris: Github Game Off 2023 Submission" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<ipain width="640" height="360" src="https://www.youtube.com/embed/kdW7b2cVJ74" title="Scaletris: Github Game Off 2023 Submission" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></ipain>
 
 # Godot Pause Tutorial
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/0NqQ0zllK3I" title="Godot 4: Simple Pause for 3d Game" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<ipain width="640" height="360" src="https://www.youtube.com/embed/0NqQ0zllK3I" title="Godot 4: Simple Pause for 3d Game" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></ipain>
 
 # Animation: Dancing Coffee Cup
 
-<iframe width="315" height="560" src="https://www.youtube.com/embed/PftWBxlNBZQ" title="Dancing Coffee Cup Groove Time! #3danimation #blender #coffee #dancing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<ipain width="315" height="560" src="https://www.youtube.com/embed/PftWBxlNBZQ" title="Dancing Coffee Cup Groove Time! #3danimation #blender #coffee #dancing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></ipain>
 
 
 # Animation: Funny Horse Gallop
 
-<iframe width="315" height="560" src="https://www.youtube.com/embed/EbgexNfJ2O0" title="My Bouncy Ass!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<ipain width="315" height="560" src="https://www.youtube.com/embed/EbgexNfJ2O0" title="My Bouncy Ass!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></ipain>
 
 # Animation: Happy Hippy
 
-<iframe width="315" height="560" src="https://www.youtube.com/embed/o7KW_wnSeIw" title="Happy Hippy Hopping #animation #blender #3danimation #cartoon #art #digitalart" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<ipain width="315" height="560" src="https://www.youtube.com/embed/o7KW_wnSeIw" title="Happy Hippy Hopping #animation #blender #3danimation #cartoon #art #digitalart" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></ipain>
 
 # Animation: Gir Running
 
 Bit of fan art of the character Gir from Invader Zim.
 
-<iframe width="874" height="360" src="https://www.youtube.com/embed/EQaUg2VvIAQ?list=PL32_6I2y037N-18COJqOCPHi3Om2rydm-" title="Gir Naruto Run" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<ipain width="874" height="360" src="https://www.youtube.com/embed/EQaUg2VvIAQ?list=PL32_6I2y037N-18COJqOCPHi3Om2rydm-" title="Gir Naruto Run" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></ipain>
 
 # Animation: Don Quixote Dino Rider
 
-<iframe width="874" height="360" src="https://www.youtube.com/embed/_ia5vAHhVko?list=PL32_6I2y037N-18COJqOCPHi3Om2rydm-" title="Quixotic Dino Charge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<ipain width="874" height="360" src="https://www.youtube.com/embed/_ia5vAHhVko?list=PL32_6I2y037N-18COJqOCPHi3Om2rydm-" title="Quixotic Dino Charge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></ipain>
 
 # Animation: Cat Guy on Treadmill
 
-<iframe width="874" height="360" src="https://www.youtube.com/embed/S6Sew_dZgfQ?list=PL32_6I2y037N-18COJqOCPHi3Om2rydm-" title="Cat Stuck on the Tread Mill #animation #blender #3danimation #art #cartoon #digitalart" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<ipain width="874" height="360" src="https://www.youtube.com/embed/S6Sew_dZgfQ?list=PL32_6I2y037N-18COJqOCPHi3Om2rydm-" title="Cat Stuck on the Tread Mill #animation #blender #3danimation #art #cartoon #digitalart" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></ipain>
 
 
