@@ -7,6 +7,8 @@ There's quite a back log to catch up on, so please be patient!
 A lot of the verbiage is PHI3 spew. Though generated on the project documentation it is definitely state-of-the-art if you catch my drift.
 I've tried to correct some of the more glarings, but this is only meant as an overview in any case. Please consult each project for more accurate documentation.
 
+---
+
 # Face Mesh Workflow with Depth Estimation using MediaPipe, Zoe, and Midas
 <img src="pix/ss/face-mesh-workflow.png" class="right"/>
 
@@ -23,6 +25,7 @@ The live demo is available on [HuggingFace.co](https://huggingface.co/spaces/ver
 - **Adjustable Spinning Direction**: Due to differences in Y axis orientations between this setup and Blender, you can spin the 3D view as needed (usually counterclockwise) by adjusting the display settings or modifying image preprocessing steps if necessary.
 
 ---
+
 # Introducing Marvin-McMarvelous: The Robotic Jive-Bot
 
 [Marvin-McMarvelous on Github](https://github.com/vgvm-lbl/marvin-mcmarvelous)
@@ -57,38 +60,7 @@ So, get ready to join Marvin McMarvelous on an exciting journey into the world o
 https://github.com/vgvm-lbl/marvin-mcmarvelous/blob/main/
 
 ---
-# Introducing Marvin-McMarvelous: The Robotic Jive-Bot
 
-[Marvin-McMarvelous on Github](https://github.com/vgvm-lbl/marvin-mcmarvelous)
-
-Meet Marvin McMarvelous, the innovative robotic jive-bot designed to seamlessly blend AI technology with a touch of humor. This state-of-the-art bot offers an exciting range of capabilities that will surely leave you impressed. Let's take a closer look at how Marvin McMarvelous brings these features to life:
-
-<img src="pix/mcm.png" class="right"/>
-
-**Features & Functionalities:**
-
-1. **Wake Word Detection:** Marvin-McMarvelous is programmed to wake up and perform tasks upon recognizing the designated "wake word," which defaults to "marvin." However, you can customize your preferred wake word using --wake_words option in the command line.
-2. **Text-to-Speech Transformation:** Once activated, Marvin McMarvelous converts text inputs into spoken audio using whisper-style voice synthesis for a more engaging user experience.
-3. **LLM Interaction:** This bot can directly interact with large language models (LLMs) by sending requests and receiving responses that are read aloud via the text-to-speech feature, enabling smooth conversations with AI systems.
-4. **Image Generation:** Marvin McMarvelous is equipped to send LLM prompts to a text-to-image bot, displaying compelling visuals based on your inputs and requests.
-5. **Customizable Listening Options:** You can leverage the power of Hugging Face's audio course by incorporating their wake word detection techniques into Marvin McMarvelous for enhanced listening capabilities.
-
-## Configuration & Setup
-
-To get the most out of Marvin-McMarvelous, follow these steps:
-
-1. **Installation & Environment Preparation:** Ensure you have the recommended setup using pyenv and Python version 3.10.10 or higher, along with essential dependencies like Tkinter. You can use the provided installation commands to set up your virtual environment and install the required packages.
-2. **LLM Integration:** Ollama, a highly-rated LLM service, serves as Marvin McMarvelous' go-to for generating responses based on user inputs. Be sure to configure it by adjusting its host entry (``aid`` variable) and pointing the URL to ``http://aid:11434/api/generate``.
-3. **TTS & TTI Bot Integration:** Marvin McMarvelous also features Piper for text-to-speech conversion, enabling it to convert inputs into whispered audio. Additionally, Automatic1111 is utilized as a stable diffusion web UI to generate images based on LLM prompts.
-4. **Customization:** To fine-tune your Marvin McMarvelous experience, you can override system prompts with the ``--system`` flag or leverage additional customizations like --wake_words and dynamic prompting capabilities for a more personalized user journey.
-
-## Embrace More Marvelousness!
-
-As an AI-driven jive-bot, Marvin McMarvelous offers limitless possibilities in terms of engagement and interaction. Whether you're interested in image generation or simply want to experience the wonders of modern technology firsthand, this innovative creation is here to delight and amaze users with its seamless blend of artificial intelligence, natural language processing, and human-like conversational abilities.
-
-So, get ready to join Marvin McMarvelous on an exciting journey into the world of advanced AI jive-bots!
-
----
 # Muscle LLM
 <img src="pix/mm-00026-350228160.png" class="right"/>
 
@@ -120,6 +92,8 @@ Here's a glimpse of the exciting ideas that could elevate our experiment to new 
 1. Research Assistant: Create an AI persona who acts as a research assistant, helping participants explore various topics and providing knowledge-based assistance while maintaining contextual awareness using LangChain's capabilities.
 2. Multi-Actor Stories: Develop an immersive multi-actor storytelling experience where Muscle Man, the AI Assistant, and other unique personas interact to create dynamic narratives with evolving plotlines. This would allow participants to contribute their creativity in shaping these interactive tales while exploring LangChain's features further.
 
+---
+
 # fLimfLaMs
 <img src="./pix/ss/labotami-vr-date-night-a1111.png" class="right"/>
 
@@ -150,3 +124,18 @@ All the AI models and APIs are easily accessible through Discord, offering you c
 With fLimfLaMs, you have the opportunity to embark on a remarkable journey through local AI and its limitless potential. Whether it's for personal or professional use, this revolutionary tool is designed to provide an unparalleled level of convenience and immersive experiences that are hard to resist!
 
 Stay tuned as we continue our efforts in improving fLimfLaMs—soon you can start exploring the vast possibilities it has to offer. Join us on this adventure, where creativity meets innovation, and together, let's shape a future defined by local AI!
+
+---
+# Piper (fork)
+
+https://github.com/luckybit4755/piper/tree/http-server-json-response
+
+[Piper](https://github.com/luckybit4755/piper/tree/http-server-json-response) is an exceptional text-to-speech (TTS) model that has been meticulously optimized for performance on Raspberry Pi 4 devices, seamlessly integrating with your fLimfLaMs ecosystem. By expanding its capabilities to support JSON request and response formats based on the Content-Type header, we've enabled a more versatile interaction style, allowing users to specify voice characteristics directly within their requests.
+
+In addition, we have refined the TTS engine by modifying the voice loading process, thereby facilitating dynamic selection of voices in real-time and enhancing user experience. This adjustment allows for greater flexibility as it accommodates various language accents or speech styles to suit different users' needs. 
+
+Furthermore, we have taken strides towards more robust text processing by incorporating the Natural Language Toolkit (NLTK), a powerful Python library that empowers Piper with advanced natural language understanding and improved handling of extended passages of text. This integration ensures uninterrupted speech generation even for longer runs, significantly enhancing its reliability and efficiency in delivering richer auditory experiences without encountering performance limitations or crashes.
+
+
+
+

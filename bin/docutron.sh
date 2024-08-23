@@ -53,6 +53,13 @@ cat << HTML
 		<link rel="stylesheet" href="css/page.css"/> 
 	</HEAD>
 	<BODY>
+		<div class="header">
+		  <div><a href="/">[LBL]</a></div>
+		  <div><a href="ai.html">AI</a></div>
+		  <div><a href="gaming.html">GAMING</a></div>
+		  <div><a href="etc.html">ETC</a></div>
+		  <div><a href="pro.html">PRO</a></div>
+		</div>
 		<div class="lbl">
 HTML
 }
