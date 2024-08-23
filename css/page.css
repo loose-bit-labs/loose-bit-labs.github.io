@@ -8,6 +8,7 @@
     --lightgraygreen:#8c8;
     --blueblack:#001;
     --darkblue:#112;
+	--darkmarrow: #aa7;
 
 	/* ----------------------------------------------- */
 
@@ -22,7 +23,7 @@
 
 	/* ----------------------------------------------- */
 
-    --text: var(--lightgray);
+    --text: var(--darkmarrow);
 
     --terminal: var(--lightgraygreen);
     --terminalBackground: var(--darkblue);
@@ -35,12 +36,13 @@
 body { 
 	color: var(--text);
 	background: var(--background); 
-	font-family: sans-serif; 
+	font-family: Dejavu Sans, Arial, Calibri, Tahoma, Verdana, sans-serif;
 	margin:.5em; 
 }
 
 .lbl {
 	margin-top: 4.4em;
+	margin-bottom: 4.4em;
 }
 
 img.right{
