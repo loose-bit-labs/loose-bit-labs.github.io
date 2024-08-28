@@ -25,6 +25,7 @@ const lbl = () => {
 	lbl_setup_preview();
 	lbl_setup_sidebar();
 	lbl_iframe_pain();
+	lbl_overlay({lo:44, hi:22, r:171, g:151, b:191});
 };
 
 const lbl_setup_preview = () => {

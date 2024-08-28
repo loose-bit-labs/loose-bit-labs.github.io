@@ -20,6 +20,7 @@
 		<TITLE>lbl ai</TITLE>
 
 		<script type="text/javascript" src="js/lbl-page.js"></script>
+		<script type="text/javascript" src="js/lbl-overlay.js"></script>
 		<script type="text/javascript">  
 			window.addEventListener('load', () => lbl())
 		</script>
@@ -29,6 +30,7 @@
 		<link rel="icon" type="image/png" sizes="96x96" href="pix/favicon/icons8-bolt-basicons-—-solid-96.png"/>
 	</HEAD>
 	<BODY>
+		<canvas id="overlay"></canvas>
 		<div class="header">
 			<div><a href="/">🏡🏃🐅 </a></span></div>
 			<div><a href="ai.html">AI</a></div>
@@ -44,7 +46,6 @@
 <h1 id="overview">Overview</h1>
 <p>Here are a number of different AI related projects and experiments. Some of the projects are still private repositories I’m working towards making public. There’s quite a back log to catch up on, so please be patient!</p>
 <p>A lot of the verbiage is PHI3 spew. Though generated on the project documentation it is definitely state-of-the-art if you catch my drift. I’ve tried to correct some of the more glarings, but this is only meant as an overview in any case. Please consult each project for more accurate documentation.</p>
-<hr />
 </div>
 <!-- End of Section -->
 
@@ -61,7 +62,6 @@
 <li><strong>Depth Estimation Integration</strong>: The workflow allows combining depth estimations from Zoe or Midas with the detected face’s 3D model for a comprehensive visualization of both facial features and their spatial orientation.</li>
 <li><strong>Adjustable Spinning Direction</strong>: Due to differences in Y axis orientations between this setup and Blender, you can spin the 3D view as needed (usually counterclockwise) by adjusting the display settings or modifying image preprocessing steps if necessary.</li>
 </ul>
-<hr />
 </div>
 <!-- End of Section -->
 
@@ -90,8 +90,6 @@
 <h2 id="embrace-more-marvelousness">Embrace More Marvelousness!</h2>
 <p>As an AI-driven jive-bot, Marvin McMarvelous offers limitless possibilities in terms of engagement and interaction. Whether you’re interested in image generation or simply want to experience the wonders of modern technology firsthand, this innovative creation is here to delight and amaze users with its seamless blend of artificial intelligence, natural language processing, and human-like conversational abilities.</p>
 <p>So, get ready to join Marvin McMarvelous on an exciting journey into the world of advanced AI jive-bots!</p>
-<p>https://github.com/vgvm-lbl/marvin-mcmarvelous/blob/main/</p>
-<hr />
 </div>
 <!-- End of Section -->
 
@@ -115,7 +113,6 @@
 <li>Research Assistant: Create an AI persona who acts as a research assistant, helping participants explore various topics and providing knowledge-based assistance while maintaining contextual awareness using LangChain’s capabilities.</li>
 <li>Multi-Actor Stories: Develop an immersive multi-actor storytelling experience where Muscle Man, the AI Assistant, and other unique personas interact to create dynamic narratives with evolving plotlines. This would allow participants to contribute their creativity in shaping these interactive tales while exploring LangChain’s features further.</li>
 </ol>
-<hr />
 </div>
 <!-- End of Section -->
 
@@ -143,14 +140,12 @@
 <p>All the AI models and APIs are easily accessible through Discord, offering you complete flexibility to create unique interactions among them. By configuring each bot via bots.json files, users can effortlessly tailor their experiences based on individual preferences and requirements.</p>
 <p>With fLimfLaMs, you have the opportunity to embark on a remarkable journey through local AI and its limitless potential. Whether it’s for personal or professional use, this revolutionary tool is designed to provide an unparalleled level of convenience and immersive experiences that are hard to resist!</p>
 <p>Stay tuned as we continue our efforts in improving fLimfLaMs—soon you can start exploring the vast possibilities it has to offer. Join us on this adventure, where creativity meets innovation, and together, let’s shape a future defined by local AI!</p>
-<hr />
 </div>
 <!-- End of Section -->
 
 <!-- Start of Section   ⚙️    🤖    🚀   ⚡  🔥   🕹️     -->
 <div class="section" id="section-piper-fork">
 <h1 id="piper-fork">Piper (fork)</h1>
-<p>https://github.com/luckybit4755/piper/tree/http-server-json-response</p>
 <p><a href="https://github.com/luckybit4755/piper/tree/http-server-json-response">Piper</a> is an exceptional text-to-speech (TTS) model that has been meticulously optimized for performance on Raspberry Pi 4 devices, seamlessly integrating with your fLimfLaMs ecosystem. By expanding its capabilities to support JSON request and response formats based on the Content-Type header, we’ve enabled a more versatile interaction style, allowing users to specify voice characteristics directly within their requests.</p>
 <p>In addition, we have refined the TTS engine by modifying the voice loading process, thereby facilitating dynamic selection of voices in real-time and enhancing user experience. This adjustment allows for greater flexibility as it accommodates various language accents or speech styles to suit different users’ needs.</p>
 <p>Furthermore, we have taken strides towards more robust text processing by incorporating the Natural Language Toolkit (NLTK), a powerful Python library that empowers Piper with advanced natural language understanding and improved handling of extended passages of text. This integration ensures uninterrupted speech generation even for longer runs, significantly enhancing its reliability and efficiency in delivering richer auditory experiences without encountering performance limitations or crashes.</p>

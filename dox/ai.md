@@ -7,8 +7,6 @@ There's quite a back log to catch up on, so please be patient!
 A lot of the verbiage is PHI3 spew. Though generated on the project documentation it is definitely state-of-the-art if you catch my drift.
 I've tried to correct some of the more glarings, but this is only meant as an overview in any case. Please consult each project for more accurate documentation.
 
----
-
 # Face Mesh Workflow with Depth Estimation using MediaPipe, Zoe, and Midas
 <img src="pix/ss/face-mesh-workflow.png" class="right"/>
 
@@ -23,8 +21,6 @@ The live demo is available on [HuggingFace.co](https://huggingface.co/spaces/ver
 - **Face Detection**: MediaPipe is used to detect faces in an uploaded image, providing facial landmarks and pose information.
 - **Depth Estimation Integration**: The workflow allows combining depth estimations from Zoe or Midas with the detected face's 3D model for a comprehensive visualization of both facial features and their spatial orientation.
 - **Adjustable Spinning Direction**: Due to differences in Y axis orientations between this setup and Blender, you can spin the 3D view as needed (usually counterclockwise) by adjusting the display settings or modifying image preprocessing steps if necessary.
-
----
 
 # Introducing Marvin-McMarvelous: The Robotic Jive-Bot
 
@@ -57,10 +53,6 @@ As an AI-driven jive-bot, Marvin McMarvelous offers limitless possibilities in t
 
 So, get ready to join Marvin McMarvelous on an exciting journey into the world of advanced AI jive-bots!
 
-https://github.com/vgvm-lbl/marvin-mcmarvelous/blob/main/
-
----
-
 # Muscle LLM
 <img src="pix/mm-00026-350228160.png" class="right"/>
 
@@ -91,8 +83,6 @@ Here's a glimpse of the exciting ideas that could elevate our experiment to new 
 
 1. Research Assistant: Create an AI persona who acts as a research assistant, helping participants explore various topics and providing knowledge-based assistance while maintaining contextual awareness using LangChain's capabilities.
 2. Multi-Actor Stories: Develop an immersive multi-actor storytelling experience where Muscle Man, the AI Assistant, and other unique personas interact to create dynamic narratives with evolving plotlines. This would allow participants to contribute their creativity in shaping these interactive tales while exploring LangChain's features further.
-
----
 
 # fLimfLaMs
 <img src="./pix/ss/labotami-vr-date-night-a1111.png" class="right"/>
@@ -125,17 +115,10 @@ With fLimfLaMs, you have the opportunity to embark on a remarkable journey throu
 
 Stay tuned as we continue our efforts in improving fLimfLaMs—soon you can start exploring the vast possibilities it has to offer. Join us on this adventure, where creativity meets innovation, and together, let's shape a future defined by local AI!
 
----
 # Piper (fork)
-
-https://github.com/luckybit4755/piper/tree/http-server-json-response
 
 [Piper](https://github.com/luckybit4755/piper/tree/http-server-json-response) is an exceptional text-to-speech (TTS) model that has been meticulously optimized for performance on Raspberry Pi 4 devices, seamlessly integrating with your fLimfLaMs ecosystem. By expanding its capabilities to support JSON request and response formats based on the Content-Type header, we've enabled a more versatile interaction style, allowing users to specify voice characteristics directly within their requests.
 
 In addition, we have refined the TTS engine by modifying the voice loading process, thereby facilitating dynamic selection of voices in real-time and enhancing user experience. This adjustment allows for greater flexibility as it accommodates various language accents or speech styles to suit different users' needs. 
 
 Furthermore, we have taken strides towards more robust text processing by incorporating the Natural Language Toolkit (NLTK), a powerful Python library that empowers Piper with advanced natural language understanding and improved handling of extended passages of text. This integration ensures uninterrupted speech generation even for longer runs, significantly enhancing its reliability and efficiency in delivering richer auditory experiences without encountering performance limitations or crashes.
-
-
-
-

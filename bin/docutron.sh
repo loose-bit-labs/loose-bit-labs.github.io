@@ -71,6 +71,7 @@ cat << HTML
 		<TITLE>lbl ${bit}</TITLE>
 
 		<script type="text/javascript" src="${js}"></script>
+		<script type="text/javascript" src="js/lbl-overlay.js"></script>
 		<script type="text/javascript">  
 			window.addEventListener('load', () => lbl())
 		</script>
@@ -80,6 +81,7 @@ cat << HTML
 		<link rel="icon" type="image/png" sizes="96x96" href="pix/favicon/icons8-bolt-basicons-—-solid-96.png"/>
 	</HEAD>
 	<BODY>
+		<canvas id="overlay"></canvas>
 		<div class="header">
 			<div><a href="/">🏡🏃🐅 </a></span></div>
 			<div><a href="ai.html">AI</a></div>
