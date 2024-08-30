@@ -6,6 +6,7 @@ const MAPPED = {
 	piper_fork                     : 'Forking Piper!',
 
 	scaletris                      : 'Yes, but is it web scale?',
+	cyberpunk_assassin_girl        : 'Killer AI!',
 	godot_pause_tutorial           : 'Pause on Godot',
 	animation_dancing_coffee       : 'Dancing Coffee',
 	animation_funny_horse          : 'Clip, clop, Hack!',

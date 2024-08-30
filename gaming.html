@@ -63,6 +63,52 @@
 <!-- End of Section -->
 
 <!-- Start of Section   ⚙️    🤖    🚀   ⚡  🔥   🕹️     -->
+<div class="section" id="section-cyberpunk-assassin-girl-project-ai-character-generation-workflow">
+<h1 id="cyberpunk-assassin-girl-project-ai-character-generation-workflow">Cyberpunk Assassin Girl Project: AI Character Generation Workflow</h1>
+<h2 id="introduction">Introduction</h2>
+<p><a href="http://www.loose-bit-labs.com/cyberpunk-girl-character-gen-demo/">Page</a> <a href="https://github.com/loose-bit-labs/cyberpunk-girl-character-gen-demo/">GitHub</a> <a href="https://www.loose-bit-labs.com/cyberpunk-girl-character-gen-demo/godot/CybergirlCharacterGenDemo.html">Live Demo</a></p>
+<p>Inspired by a project that came across Reddit that generates 3D characters from example images. Let’s embark on an exciting journey of creating a cyberpunk assassin girl character using Stable Diffusion for model generation, followed by animation via Mixamo and integration into the Godot game engine. The final result showcases impressive potential even though it’s currently at a slightly lower resolution.</p>
+<p><a href="https://github.com/zjp-shadow/CharacterGen/"><img width="60%" src="images/cpg00-cgen.png"/></a></p>
+<p>Please see <a href="CREDITS.md">credits</a> for details.</p>
+<p><ipain width="1280" height="720" src="https://www.youtube.com/embed/W3163_qOPcE" title="Cyberpunk Assassin Girl Project: AI Character Generation Workflow" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+<h3 id="overview-1">Overview</h3>
+<ol type="1">
+<li>Initial character from stable diffusion <a href="stable-diffusion/step1">text-to-image</a></li>
+<li>Refine the pose uing <a href="stable-diffusion/step2">image-to-image</a></li>
+<li>Generate the 3D Model using <a href="https://github.com/zjp-shadow/CharacterGen/">CharacterGen</a></li>
+<li>Cleanup in Blender and export as FBX</li>
+<li>Animate with Mixamo</li>
+<li>Combined the animations in Blender and export as GLB</li>
+<li>Create <a href="godot/CybergirlCharacterGenDemo.html">Godot Demo</a></li>
+</ol>
+<h2 id="step-by-step-process">Step-by-Step Process</h2>
+<h3 id="initial-image-generation-with-stable-diffusion">1. Initial Image Generation with Stable Diffusion</h3>
+<p>Imagine an example image of a character, and create a stable diffusion prompt for 3D model generation.</p>
+<p><code>Stable Diffusion Prompt: "Full front view  view of a cyberpunk assassin girl in a ((t-pose)) on a (solid black  background), full body"</code></p>
+<p><img width="60%" src="stable-diffusion/step1/00006-2072363650.png"/></p>
+<h3 id="refine-initial-image-with-stable-diffusion">2. Refine Initial Image with Stable Diffusion</h3>
+<p>Iterate through rerolls to achieve a suitable starting pose for the generated character model using Stable Diffusion or an alternate technique if needed.</p>
+<p><img width="60%" src="stable-diffusion/step1/00019-2772004405.png"/></p>
+<h3 id="generate-the-3d-model-using-charactergen">3. Generate the 3D Model using CharacterGen</h3>
+<p>The character generation itself was super fast and it looks pretty good. <img width="60%" src="images/cpg01-cgen.png"/></p>
+<h3 id="cleanup-and-fbx-export">4. Cleanup and FBX Export</h3>
+<p><img width="33%" src="images/cpg-non-manifold.png" style="float:right"/> - Decimate the high-poly count model in Blender for better performance during animation exporting while maintaining an appealing look. - Refine the character focusing on removing unwanted elements such as the tail.</p>
+<p><img width="40%" src="images/cpg02-high-poly.png"/> <img width="40%" src="images/cpg03-decimate.png"/></p>
+<p>Another quirk to the model is that it is in multiple sections! Happily this didn’t impact the downstream activities</p>
+<h3 id="animate-the-character-with-mixamo">5. Animate the Character with Mixamo</h3>
+<p><img width="60%" src="images/cpg04-mixamo.png"/></p>
+<h3 id="combine-the-animations-in-blender-into-nla-strips-and-re-export-to-gbl">6. Combine the Animations in Blender into NLA strips and re-export to GBL</h3>
+<p><img width="60%" src="images/cpg05-nla.png"/></p>
+<h3 id="godot-demo-of-the-character.">7. Godot demo of the character.</h3>
+<p><img width="60%" src="images/cpg06-godot.png"/></p>
+<h2 id="results-future-improvements">Results &amp; Future Improvements</h2>
+<p>The final character generation and animation process resulted in an impressive cyberpunk assassin girl model, despite the initial lower resolution. The project holds great promise for future iterations with higher-resolution models and more refined animations.</p>
+<p>The <a href="https://github.com/zjp-shadow/CharacterGen/">CharacterGen</a> project has a lot more to it than explored here. It’s also interesting to imagine more fully automated workflows.</p>
+<p>Bonus <a href="bin/timeline-for-shotcut.py">timeline-for-shotcut.py</a> can be used to export timeline for clips in playlists in Shotcut MLT files.</p>
+</div>
+<!-- End of Section -->
+
+<!-- Start of Section   ⚙️    🤖    🚀   ⚡  🔥   🕹️     -->
 <div class="section" id="section-godot-pause-tutorial">
 <h1 id="godot-pause-tutorial">Godot Pause Tutorial</h1>
 <p><ipain width="640" height="360" src="https://www.youtube.com/embed/0NqQ0zllK3I" title="Godot 4: Simple Pause for 3d Game" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></ipain></p>
